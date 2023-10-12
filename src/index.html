@@ -1,5 +1,9 @@
+
 <!doctype html>
 <html lang="en">
+<!--still need to get pictures for each section-->
+<!--pictures in about us wont space properly on mobile response-->
+<!--need to figure out centering about us text-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,12 +16,12 @@
 <body>
 <nav class="content text-white mx-auto w-full">
     <div class="bg-slate-950 p-4 flex justify-between">
-        <h1>
+        <h1 class="text-3xl md:text-2xl md:pl-2 mt-1">
             <a href="/">JD Insights</a>
         </h1>
-        <button class="md:hidden">&#9776</button>
+        <button class="md:hidden pb-1 text-4xl text-white">&#9776</button>
 
-        <div class="hidden md:block space-x-8">
+        <div class="hidden md:text-2xl font-light md:block space-x-8">
             <a href="/">Our Services</a>
             <a href="/">About Us</a>
             <a href="/">Our Work</a>
@@ -25,5 +29,72 @@
         </div>
     </div>
 </nav>
+<section class="bg-slate-950 text-white">
+    <div class="max-w-[75%] ml-3 md:ml-4 flex-auto text-4xl md:pt-20 md:text-6xl pt-14">JD Insights is a marketing company that specializes in web development, graphic design and communications.</div>
+    <div class="flex my-10 mb-3.5 justify-center items-center">
+       <img class="max-md: px-4" src="https://i0.wp.com/eruptr.com/wp-content/uploads/2020/04/Team-collaboration-office-marketing-meeting.jpg?fit=1000%2C667&ssl=1" alt="stock image of marketing meeting">
+    </div>
+    <div class="text-4xl md:mt-4 mt-2 pl-4 md:text-6xl">What We Offer:</div>
+    <div class="p-4 text-xl ml-8 md:mx-16 md:text-2xl font-extralight">
+        <p class="max-md: ">
+            <strong>Web Development</strong> <br />
+               - Essential for marketing allowing businesses to reach their target audience, promote their offerings, and generate leads and sales.<br />
+                 <br />
+            <strong>Graphic Design</strong> <br />
+               - Crucial in helping businesses to grab attention, communicate effectively, build brand identity, and evoke emotions. <br />
+                <br />
+            <strong>Communications</strong> <br />
+               - Social media, press releases, and other customer touchpoints build trust and repeat business.<br />
+        </p>
+    </div>
+    <div class="text-xl md:mt-4 mt-2 pl-4 md:text-2xl">
+        <div class="font-thin mx-8">
+            At JD Insights, we believe that web development, graphic design, and communications are essential components of a successful marketing strategy. These three elements work together to create a cohesive and effective marketing plan that can help businesses to: <br />
+              <em> <li>Make a positive first impression</li>
+                <li>Communicate their message clearly and concisely</li>
+                <li>Build relationships with customers</li>
+                  <li>Generate leads and sales</li> </em> <br />
+        </div>
+
+    </div>
+</section>
+<section class="bg-stone-300 text-black">
+    <div class="text-4xl  md:pl-72 p-4 md:mx-[25%] md:text-6xl">About Us</div>
+    <div class="mx-8 max-md: max-h-sm md:max-h-full max-w-sm md:max-w-full grid flex-wrap md:flex md:justify-between">
+        <img src="https://smartersecurity.com/wp-content/uploads/portrait-placeholder.jpg" alt="filler picture">
+        <img src="https://smartersecurity.com/wp-content/uploads/portrait-placeholder.jpg" alt="filler picture">
+    </div>
+    <div class="md:text-2xl text-xl text-center p-4 mx-12 mt-12">We are two childhood friends who started a marketing company specializing in web development, graphic design, and communications. We are both passionate about helping businesses succeed with a strong online presence and a clear brand identity. We have always believed that every client is unique in what they need for content strategy and we know we can provide that tailored composition. We are committed to providing our clients with the highest quality services and support. Contact us today to learn more about how we can help your business grow. </div>
+</section>
+<section class="md:grid-cols-3  grid-cols-1 gap-24 w-full h-full bg-no-repeat text-white bg-cover bg-left-top"
+        style="background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1748&q=80');">
+        <div class="text-4xl text-center  md:pl-72 p-4 md:mx-[25%] md:text-6xl">
+            Featured Work
+        </div>
+        <div>
+            <div class="max-md:px-32 md:p-[36%] pt-16">
+            <img class="object-contain" src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="stock coding picture">
+            </div>
+            <p class="p-4 mt-8 text-2xl">
+                Web Development
+            </p>
+        </div>
+        <div>
+            <div class="max-md:px-32 md:p-[36%] pt-16">
+                <img class="object-contain" src="https://cdn.pixabay.com/photo/2023/09/30/15/44/ai-generated-8285959_1280.png" alt="stock graphic design picture">
+            </div>
+            <p class="p-4 mt-8 text-2xl">
+                Graphic Design
+            </p>
+        </div>
+        <div>
+            <div class="max-md:px-32 md:p-[36%] pt-16">
+                <img class="object-contain" src="https://cdn.pixabay.com/photo/2014/08/24/19/01/apps-426559_1280.jpg" alt="stock communications picture">
+            </div>
+            <p class="p-4 mt-8 text-2xl">
+                Communications
+            </p>
+        </div>
+</section>
 </body>
 </html>
