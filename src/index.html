@@ -12,9 +12,12 @@
     <link href="../dist/output.css" rel="stylesheet">
     <title>JD Insights</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="content text-white mx-auto w-full">
+<nav class="content sticky top-0  text-white mx-auto w-full">
     <div class="bg-slate-950 p-4 flex justify-between">
         <h1 class="text-3xl md:text-2xl md:pl-2 mt-1">
             <a href="/">JD Insights</a>
@@ -59,18 +62,24 @@
     </div>
 </section>
 <section class="bg-stone-300 text-black">
-    <div class="text-4xl  md:pl-72 p-4 md:mx-[25%] md:text-6xl">About Us</div>
+    <div class="text-4xl   py-4 md:text-6xl">
+        <p class="text-center">About Us
+        </p>
+    </div>
     <div class="mx-8 max-md: max-h-sm md:max-h-full max-w-sm md:max-w-full grid flex-wrap md:flex md:justify-between">
         <img src="https://smartersecurity.com/wp-content/uploads/portrait-placeholder.jpg" alt="filler picture">
         <img src="https://smartersecurity.com/wp-content/uploads/portrait-placeholder.jpg" alt="filler picture">
     </div>
     <div class="md:text-2xl text-xl text-center p-4 mx-12 mt-12">We are two childhood friends who started a marketing company specializing in web development, graphic design, and communications. We are both passionate about helping businesses succeed with a strong online presence and a clear brand identity. We have always believed that every client is unique in what they need for content strategy and we know we can provide that tailored composition. We are committed to providing our clients with the highest quality services and support. Contact us today to learn more about how we can help your business grow. </div>
 </section>
-<section class="md:grid-cols-3  grid-cols-1 gap-24 w-full h-full bg-no-repeat text-white bg-cover bg-left-top"
-        style="background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1748&q=80');">
-        <div class="text-4xl text-center  md:pl-72 p-4 md:mx-[25%] md:text-6xl">
-            Featured Work
+<section class="md:grid-cols-3 mybackground grid-cols-1 gap-24 ">
+<!--         bg-no-repeat text-white bg-cover bg-left-top"-->
+<!--        style="background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1748&q=80');">-->
+
+        <div class="text-4xl md:text-6xl">
+            <p class="text-center">Featured Work</p>
         </div>
+    <div class="flex ">
         <div>
             <div class="max-md:px-32 md:p-[36%] pt-16">
             <img class="object-contain" src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="stock coding picture">
@@ -95,6 +104,7 @@
                 Communications
             </p>
         </div>
+    </div>
 </section>
 </body>
 </html>
