@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!--still need to get pictures for each section-->
-<!--pictures in about us wont space properly on mobile response-->
-<!--need to figure out centering about us text-->
+<!--still can't figure out navbar-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -18,31 +16,31 @@
           rel="stylesheet">
 </head>
 <body>
-<nav class="content sticky top-0 mx-auto w-full">
+<nav class="content sticky top-0 md:mx-auto w-full">
     <div class="bg-slate-950 p-4 flex justify-between">
         <h1 class="text-white text-3xl md:text-2xl md:pl-2 mt-1">
-            <a>JD Insights</a>
+            <a class="hover:font-bold" href="#homepage">JD Insights</a>
         </h1>
         <details>
             <summary tabindex="0" class="md:hidden btn list pb-1 text-4xl  text-white">&#9776</summary>
-            <ul tabindex="0" class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                <li><a>Our Services</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Our Work</a></li>
-                <li><a>Contact Us</a></li>
+            <ul tabindex="0" class="text-center p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#featured">Our Work</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </details>
-        <div class="hidden md:text-2xl font-light md:block space-x-8">
-            <a href="/">Our Services</a>
-            <a href="/">About Us</a>
-            <a href="/">Our Work</a>
-            <a href="/">Contact Us</a>
+        <div class="hidden md:text-2xl  font-light md:block space-x-8">
+            <a class="hover:font-extrabold" href="#services">Our Services</a>
+            <a class="hover:font-extrabold" href="#about">About Us</a>
+            <a class="hover:font-extrabold" href="#featured">Our Work</a>
+            <a class="hover:font-extrabold" href="#contact">Contact Us</a>
         </div>
     </div>
 </nav>
 
 
-<section class="bg-slate-950 text-white">
+<section class="homepage bg-slate-950 text-white" id="homepage">
     <div class="max-w-[75%] ml-3 md:ml-4 te flex-auto text-4xl md:pt-20 md:text-6xl pt-14">JD Insights is a marketing
         company that specializes in web development, graphic design and communications.
     </div>
@@ -51,7 +49,7 @@
              src="https://i0.wp.com/eruptr.com/wp-content/uploads/2020/04/Team-collaboration-office-marketing-meeting.jpg?fit=1000%2C667&ssl=1"
              alt="stock image of marketing meeting">
     </div>
-    <div class="text-4xl md:mt-4 mt-2 pl-4 md:text-6xl">What We Offer:</div>
+    <div class="services text-4xl md:mt-4 mt-2 pl-4 md:text-6xl" id="services">What We Offer:</div>
     <div class="p-4 text-xl ml-8 md:mx-16 md:text-2xl font-extralight">
         <p class="max-md: ">
             <strong>Web Development</strong> <br/>
@@ -82,7 +80,7 @@
     </div>
 </section>
 
-<section class="bg-stone-300 text-black">
+<section class="about bg-stone-300 text-black" id="about">
 
     <div class="text-4xl   py-4 md:text-6xl">
         <p class="text-center">About Us
@@ -112,7 +110,7 @@
         today to learn more about how we can help your business grow.
     </div>
 </section>
-<section class="md:grid-cols-3 px-4 text-slate-300 mybackground grid-cols-1 gap-24 ">
+<section class="featured md:grid-cols-3 px-4 text-slate-300 mybackground grid-cols-1 gap-24" id="featured">
 
     <div class="text-4xl  pt-8 md:text-6xl">
         <p class="text-center">Featured Work</p>
@@ -157,7 +155,7 @@
     </div>
 </section>
 
-<section class="bg-stone-300 text-black">
+<section class="reference bg-stone-300 text-black" id="reference">
     <div class="text-4xl text-center  py-4 md:text-6xl">
         <p class="text-center">Who we've worked with.
         </p>
@@ -184,7 +182,7 @@
 
 </section>
 
-<section class="text-center mybackground">
+<section class="contact text-center mybackground" id="contact">
     <h2 class="text-white text-4xl md:text-6xl">We'd love to work with you.</h2>
 
 </section>
